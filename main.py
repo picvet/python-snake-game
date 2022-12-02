@@ -220,16 +220,20 @@ class Game:
                     # we want to use these events to control the snake
                     if not pause:
                         if event.key == K_LEFT:
-                            self.snake.move_left()
+                            if self.snake.direction != 'right':
+                                self.snake.move_left()
 
                         if event.key == K_RIGHT:
-                            self.snake.move_right()
+                            if self.snake.direction != 'left':
+                                self.snake.move_right()
 
                         if event.key == K_UP:
-                            self.snake.move_up()
+                            if self.snake.direction != 'down':
+                                self.snake.move_up()
 
                         if event.key == K_DOWN:
-                            self.snake.move_down()
+                            if self.snake.direction != 'up':
+                                self.snake.move_down()
 
                 elif event.type == QUIT:
                     running = False
