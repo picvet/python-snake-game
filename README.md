@@ -2,6 +2,17 @@
 
 ![image](https://user-images.githubusercontent.com/87276390/205490800-cf66a6ce-4bfc-45ad-a138-306bda2ffaf2.png)
 
+## Download
+
+```
+https://github.com/picvet/python-snake-game.git
+```
+
+## Run in terminal
+
+```
+python ./main.py
+```
 
 ## What I used
 
